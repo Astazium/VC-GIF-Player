@@ -1,0 +1,10 @@
+{
+	"id": "gifplayer",
+	"title": "GIF Player",
+	"version": "22.08.0",
+	"creator": "Astazium",
+	"description": "Проигрователь .gif файлов",
+	"dependencies": [
+        "libpng"
+    ]
+}
