@@ -8,7 +8,7 @@
 
 ## Использование
 
-Воспроизведение: `gif.start x y z filename.gif`
+Воспроизведение: `gif.start filename.gif fps x y z`
 
 > [!IMPORTANT]
 > GIF файлы должны находится в `config:gifplayer/`
