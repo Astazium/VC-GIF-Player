@@ -1,7 +1,7 @@
 {
 	"id": "gifplayer",
 	"title": "GIF Player",
-	"version": "22.08.0",
+	"version": "05.09.0",
 	"creator": "Astazium",
 	"description": "Проигрователь .gif файлов",
 	"dependencies": [
