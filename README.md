@@ -1,6 +1,7 @@
 # VC-GIF-Player
 
-Мод для [VoxelCore](https://github.com/MihailRis/voxelcore) на основе [pure_lua_GIF](https://github.com/Egor-Skriptunoff/pure_lua_GIF) позволяющий воспроизводить GIF файлы при помощи блоков
+Эксперементальный и крайне не оптимизированный мод для [VoxelCore](https://github.com/MihailRis/voxelcore) на основе [pure_lua_GIF](https://github.com/Egor-Skriptunoff/pure_lua_GIF) \
+позволяющий воспроизводить GIF файлы при помощи блоков
 
 > [!IMPORTANT]
 > Требует установленной библиотеки [LibPNG](https://github.com/Onran0/VCLibPNG)
