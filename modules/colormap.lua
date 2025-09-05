@@ -90,7 +90,8 @@ local function getBlockTexturesPath()
                 end
             end
         else
-            print("Папка не найдена или ошибка: " .. blockConfigs)
+            --print("Папка не найдена или ошибка: " .. blockConfigs)
+            print(files .. " occured while trying to process " .. blockConfigs)
         end
     end
 
@@ -138,7 +139,7 @@ function M.getColorMap()
         for _, texture in pairs(texture_paths) do
             local success, img = pcall(image.from_png, texture)
             if not success or not img then
-                debug.print(img .. " while reading: " .. texture)
+                debug.print(img .. " occured while trying to read: " .. texture)
             else
                 local rgbPixels = {}
                 for i = 1, #img.pixels do
