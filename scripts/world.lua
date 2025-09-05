@@ -137,7 +137,6 @@ local function preprocessFrames(allFrames)
 end
 
 local function buildFrameFull(ids2D, ox, oy, oz)
-    local bset = block.set
     local h = #ids2D
     for r = 1, h do
         local y = oy + (h - r)
@@ -153,7 +152,7 @@ local function buildFrameFull(ids2D, ox, oy, oz)
                 end
                 local baseX = ox + (startC - 1)
                 for x = baseX, baseX + (endC - startC) do
-                    bset(x, y, oz, id)
+                    block.set(x, y, oz, id)
                 end
                 c = endC + 1
             else
@@ -171,7 +170,6 @@ function on_world_tick()
     if frame_timer < delay then return end
     frame_timer = frame_timer - delay
 
-    local bset = block.set
     local h = #first_frame
 
     if current_frame == 1 then
@@ -186,7 +184,7 @@ function on_world_tick()
                     local y = originY + (h - r)
                     local x0 = originX + (c1 - 1)
                     for dx = 0, width - 1 do
-                        bset(x0 + dx, y, originZ, id)
+                        block.set(x0 + dx, y, originZ, id)
                     end
                 end
             end
