@@ -1,14 +1,9 @@
---[[
-Модуль для эмуляции библиотеки io
-]]
-
 local buffer = require "core:data_buffer"
 
 local M = {}
 
 local buff = buffer({}, "LE", true)
 
--- Открытие файла
 function M.open(filename)
     assert(file.isfile(filename), 
            "Path to file doesn't exist or it's not a file")
