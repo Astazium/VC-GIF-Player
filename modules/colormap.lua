@@ -91,7 +91,7 @@ local function getBlockTexturesPath()
             end
         else
             --print("Папка не найдена или ошибка: " .. blockConfigs)
-            print(files .. " occured while trying to process " .. blockConfigs)
+            print(files .. " occured while trying to process: " .. blockConfigs)
         end
     end
 
